@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer · 作品墙</title>
+<meta name="description" content="summer 的作品墙 — 关于我 · 入座须知 · 板评 · 卡类。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8e0b8'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-style='italic' font-size='34' fill='%23222418' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/v3/style.css">
+</head>
+<body class="work" id="top">
+
+  <!-- ══ 左侧固定侧栏（亮） ══ -->
+  <aside class="side">
+    <div class="side-top">
+      <h1 class="name">Summer</h1>
+      <p class="roles">常驻 团9y<br>MBTI ENFP<br>座位 耳巫</p>
+    </div>
+
+    <nav class="menu">
+      <a class="home-link" href="index.html">Home Page <span>↗</span></a>
+      <span class="mw">My Work</span>
+      <a class="item" href="#ju1" data-t="ju1"><i>●</i>话术 <span>↗</span></a>
+      <a class="item" href="#ju2" data-t="ju2"><i>●</i>关于我 <span>↗</span></a>
+      <a class="item" href="#ju3" data-t="ju3"><i>●</i>入座须知 <span>↗</span></a>
+      <a class="item" href="#ju5" data-t="ju5"><i>●</i>板评 <span>↗</span></a>
+      <a class="item" href="#ju6" data-t="ju6"><i>●</i>卡类 <span>↗</span></a>
+    </nav>
+
+    <div class="bio">
+      <p>盛夏很长，绿意盎然。我们共振过的夏天，约等于永远——主风格年上高恋 · 温柔引导，副风格动描 · 微擦，随机掉落钓系与恶趣味。</p>
+      <p>心怎么变，都是偏向你。你不用每次重新整理自己，只要回来，我一直在。</p>
+    </div>
+
+    <span class="copy">© 2026 summer · 盛夏长明</span>
+  </aside>
+
+  <!-- ══ 右侧：亮色网格作品墙 ══ -->
+  <main class="stage">
+
+    <div class="wall">
+      <div class="row">
+        <a class="tile" id="ju2" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
+          <img src="assets/v2/chair.jpg" alt="白椅与花影"><span class="tag">卷二 · 关于我 ↗</span>
+        </a>
+        <a class="tile" id="ju3" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
+          <img src="assets/v2/watercolor.jpg" alt="黄绿水色"><span class="tag">卷三 · 入座须知 ↗</span>
+        </a>
+        <a class="tile" id="ju5" href="https://www.kdocs.cn/l/chiHUwOdiJny" target="_blank" rel="noopener">
+          <img src="assets/v2/leaves.jpg" alt="青叶光影"><span class="tag">卷五 · 板评 ↗</span>
+        </a>
+      </div>
+      <div class="row">
+        <a class="tile" id="ju1" href="https://www.kdocs.cn/l/cnFs3dIdDWgi" target="_blank" rel="noopener">
+          <img src="assets/v2/seedcase.jpg" alt="Seed Case 青蓝海报"><span class="tag">卷一 · 话术 ↗</span>
+        </a>
+        <a class="tile dark" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
+          <img src="assets/v2/dark-bloom.jpg" alt="暗夜花影"><span class="tag">盛夏总档 ↗</span>
+        </a>
+        <a class="tile" id="ju6" href="https://www.kdocs.cn/l/cvy4T6u420QU" target="_blank" rel="noopener">
+          <img src="assets/v2/marble.jpg" alt="盛夏长明 · 绿意纹样"><span class="tag">卷六 · 卡类 ↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-meta">卷一 — 卷六<br><span>kdocs.cn 文档索引</span></div>
+      <div class="cap-txt">
+        <p>话术 · 关于我 · 入座须知 · 板评 · 卡类——五卷文档，一座盛夏。每一卷都从「好久不見」开始，到「偏向你」结束。点任意一张图，打开对应原文。</p>
+      </div>
+    </div>
+
+    <div class="w-foot">© 2026 summer · 盛夏长明 · 我们共振过的夏天约等于永远</div>
+
+  </main>
+
+<script>
+  // 根据 hash 高亮对应菜单项并脉冲对应图块
+  var id = (location.hash || '').replace('#', '');
+  if (id) {
+    var tile = document.getElementById(id);
+    if (tile) {
+      tile.classList.add('pulse');
+      setTimeout(function(){ tile.classList.remove('pulse'); }, 2400);
+      var link = document.querySelector('.menu .item[data-t="' + id + '"]');
+      if (link) link.classList.add('active');
+    }
+  }
+</script>
+</body>
+</html>

@@ -9,11 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d3f4a'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-style='italic' font-size='34' fill='%23f4f1e8' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/v2/style.css">
+<link rel="stylesheet" href="assets/v3/style.css">
 </head>
-<body id="top">
+<body class="home" id="top">
 
-  <!-- ══ 左侧固定侧栏（透明，暗底图透出） ══ -->
+  <!-- ══ 左侧固定侧栏（暗） ══ -->
   <aside class="side">
     <div class="side-top">
       <h1 class="name">Summer</h1>
@@ -21,13 +21,13 @@
     </div>
 
     <nav class="menu">
-      <a class="home" href="#top">Home Page <span>↗</span></a>
+      <a class="home-link" href="#top">Home Page <span>↗</span></a>
       <span class="mw">My Work</span>
-      <a class="item" href="https://www.kdocs.cn/l/cnFs3dIdDWgi" target="_blank" rel="noopener"><i>●</i>话术 <span>↗</span></a>
-      <a class="item" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener"><i>●</i>关于我 <span>↗</span></a>
-      <a class="item" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener"><i>●</i>入座须知 <span>↗</span></a>
-      <a class="item" href="https://www.kdocs.cn/l/chiHUwOdiJny" target="_blank" rel="noopener"><i>●</i>板评 <span>↗</span></a>
-      <a class="item" href="https://www.kdocs.cn/l/cvy4T6u420QU" target="_blank" rel="noopener"><i>●</i>卡类 <span>↗</span></a>
+      <a class="item" href="work.html#ju1"><i>●</i>话术 <span>↗</span></a>
+      <a class="item" href="work.html#ju2"><i>●</i>关于我 <span>↗</span></a>
+      <a class="item" href="work.html#ju3"><i>●</i>入座须知 <span>↗</span></a>
+      <a class="item" href="work.html#ju5"><i>●</i>板评 <span>↗</span></a>
+      <a class="item" href="work.html#ju6"><i>●</i>卡类 <span>↗</span></a>
     </nav>
 
     <div class="bio">
@@ -38,75 +38,35 @@
     <span class="copy">© 2026 summer · 盛夏长明</span>
   </aside>
 
-  <!-- ══ 右侧主舞台 ══ -->
+  <!-- ══ 右侧：暗色 SHOWREEL 首页 ══ -->
   <main class="stage">
 
-    <!-- ① 刊头大卡（参考①：大作品卡 + 下方左右说明行） -->
-    <section class="feature" id="work-1">
-      <a class="frame" href="https://www.kdocs.cn/l/cnFs3dIdDWgi" target="_blank" rel="noopener">
-        <img src="assets/v2/seedcase.jpg" alt="Seed Case · 青蓝海报">
-      </a>
-      <div class="cap">
-        <div class="cap-meta">卷一 · 话术<br><span>kdocs.cn/l/cnFs3dIdDWgi</span></div>
-        <div class="cap-txt">
-          <p>「Seed Case」是把想说的话装进种壳里——钓系、恶趣味、温柔引导，哪一种语气，都是偏向你的理由。慢慢说，不着急，我在听。</p>
-        </div>
-      </div>
-    </section>
+    <div class="reel-head"><i class="dot"></i>SUMMER · 盛夏档案</div>
 
-    <!-- ② 密集网格（参考②：三列作品墙 + 通栏宽幅） -->
-    <section class="wall" id="work-2">
-      <div class="grid">
-        <a class="tile" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
-          <img src="assets/v2/chair.jpg" alt="白椅与花影">
-          <span class="tag">卷二 · 关于我 ↗</span>
-        </a>
-        <a class="tile" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
-          <img src="assets/v2/watercolor.jpg" alt="黄绿水色">
-          <span class="tag">卷三 · 入座须知 ↗</span>
-        </a>
-        <a class="tile" href="https://www.kdocs.cn/l/chiHUwOdiJny" target="_blank" rel="noopener">
-          <img src="assets/v2/leaves.jpg" alt="青叶光影">
-          <span class="tag">卷五 · 板评 ↗</span>
-        </a>
-        <a class="tile wide" href="https://www.kdocs.cn/l/cvy4T6u420QU" target="_blank" rel="noopener">
-          <img src="assets/v2/marble.jpg" alt="盛夏长明 · 绿意纹样">
-          <span class="tag">卷六 · 卡类 ↗</span>
-        </a>
-      </div>
-      <div class="cap">
-        <div class="cap-meta">卷二 — 卷六<br><span>kdocs.cn 文档索引</span></div>
-        <div class="cap-txt">
-          <p>关于我 · 入座须知 · 板评 · 卡类——四卷文档，一座盛夏。每一卷都从「好久不見」开始，到「偏向你」结束。</p>
-        </div>
-      </div>
-    </section>
+    <a class="player" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
+      <img src="assets/v2/dark-bloom.jpg" alt="暗夜花影">
+      <span class="play"><b></b></span>
+    </a>
 
-    <!-- ③ 暗色档案带（参考③：暗底 + 居中媒体卡 + 底部 Index） -->
-    <section class="reel" id="work-3">
-      <div class="reel-head"><i class="dot"></i>SUMMER · 盛夏档案</div>
-      <a class="player" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">
-        <img src="assets/v2/dark-bloom.jpg" alt="暗夜花影">
-        <span class="play"><b></b></span>
-        <span class="reel-name">盛夏总档 · 打开原文 ↗</span>
-      </a>
-    </section>
+    <div class="goto-row">
+      <a class="goto" href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">前往文档观看：<b>kdocs ↗</b></a>
+      <a class="goto ghost" href="work.html">进入作品墙 →</a>
+    </div>
 
-    <!-- ④ 页脚（参考③底部：大斜体标题 + 左信息右 Index） -->
     <footer class="foot">
       <h2 class="f-title">SUMMER<br>ARCHIVE 2026</h2>
       <div class="f-cols">
         <div class="f-left">
-          <b>summer · 常驻 团9y</b>
-          <p>心怎么变，都是偏向你。<br>我们共振过的夏天，约等于永远。</p>
+          <p class="f-line">summer · 常驻 团9y<br>座位 耳巫 · MBTI ENFP</p>
+          <p class="f-quote">心怎么变，都是偏向你。<br>我们共振过的夏天，约等于永远。</p>
         </div>
         <div class="f-index">
           <b>Index</b>
-          <a href="https://www.kdocs.cn/l/cnFs3dIdDWgi" target="_blank" rel="noopener">话术 / 钓系 · 恶趣味 · 温柔引导</a>
-          <a href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">关于我 / summer 的自我介绍</a>
-          <a href="https://www.kdocs.cn/l/crAFPtKs0fEg" target="_blank" rel="noopener">入座须知 / 入座前请过目</a>
-          <a href="https://www.kdocs.cn/l/chiHUwOdiJny" target="_blank" rel="noopener">板评 / 别人眼里的盛夏</a>
-          <a href="https://www.kdocs.cn/l/cvy4T6u420QU" target="_blank" rel="noopener">卡类 / 两颗心合二为一</a>
+          <a href="work.html#ju1">话术 / 钓系 · 恶趣味 · 温柔引导</a>
+          <a href="work.html#ju2">关于我 / summer 的自我介绍</a>
+          <a href="work.html#ju3">入座须知 / 入座前请过目</a>
+          <a href="work.html#ju5">板评 / 别人眼里的盛夏</a>
+          <a href="work.html#ju6">卡类 / 两颗心合二为一</a>
         </div>
       </div>
       <div class="foot-end">© 2026 summer · 盛夏长明</div>
